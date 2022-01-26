@@ -377,14 +377,14 @@ background-color: rgba(255,255,255,.2);
 
 /*----- login -----*/
 
-.login-sect{
+.login-sect, .search-sect{
     max-height: 0;
     overflow-y: hidden;
     transition: all .5s;
     background: linear-gradient(to bottom,rgba(0,0,0,0)0%,rgba(0,0,0,.05)100%);
 }
 
-.login-sect.on{
+.login-sect.on, .search-sect.on{
     max-height: 200px;
 }
 
@@ -462,18 +462,18 @@ background-color: rgba(255,255,255,.2);
     color: rgba(0,0,0,.3);
 }
 
-.megaform .on.input-default span{
+.megaform .input-default.on span{
     color: #e81d55;
     top: 0vw;
     transform: translateY(-100%);
     opacity: .2;
 }
 
-.megaform .on.input-default input:invalid{
+.megaform .input-default.on input:invalid{
     color: #e81d55;
 }
 
-.megaform label.on::after{
+.megaform .input-default.on::after{
     width: 100%;
     background: #e81d55;
     z-index: 22;
@@ -523,33 +523,21 @@ background-color: rgba(255,255,255,.2);
 /*----- end login -----*/
 
 /*----- search -----*/
-.search-sect{
-    max-height: 0;
-    overflow: hidden;
-    transition: all .5s;
-    background: linear-gradient(to bottom,rgba(0,0,0,0)0%,rgba(0,0,0,.05)100%);
-}
-
-.search-sect.on{
-    max-height: 200px;
-}
 
 .search-sect .input-wrapp{
     padding-top: 1vw;
     flex-basis: 90%;
 }
 
-.megaform label.on span{
-    top: 0vw;
-    transform: translateY(-100%);
-    opacity: .2;
+.search-sect .input-default.on span{
+    color: #000;
 }
 
-.megaform label.on input{
+.megaform .input-default.on input{
     color: rgba(37,37,37,1)!important;
 }
 
-.search-sect.on .megaform label.on:after{
+.search-sect.on .megaform .input-default.on:after{
     width: 100%;
     background: #3b3358;
 }
