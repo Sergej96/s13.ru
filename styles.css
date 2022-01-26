@@ -1,7 +1,7 @@
 @font-face{
     font-family:"helvetica-light";
     font-display:swap;
-    src:url("/src/font/helveticaneuecyr-light.woff") format("woff");
+    src:url("./src/font/helveticaneuecyr-light.woff") format("woff");
     font-weight:300;
     font-style:normal;
     font-stretch:normal;
@@ -10,7 +10,7 @@
 @font-face{
     font-family:"helvetica-bold";
     font-display:swap;
-    src:url("/src/font/helveticaneuecyr-bold.woff")format("woff");
+    src:url("./src/font/helveticaneuecyr-bold.woff")format("woff");
     font-weight:bold;
     font-style:normal;
     font-stretch:normal;
@@ -19,7 +19,7 @@
 @font-face{
     font-family:"helvetica-black";
     font-display:swap;
-    src:url("/src/font/helveticaneuecyr-black.woff")format("woff");
+    src:url("./src/font/helveticaneuecyr-black.woff")format("woff");
     font-weight:900;
     font-style:normal;
     font-stretch:normal;
@@ -355,19 +355,19 @@ header .s13.view, header .login, header .search{
 }
 
 header .s13.view{
-    background-image: url('/src/view-table.svg');
+    background-image: url('./src/view-table.svg');
 }
 
 header .s13.view.list{
-    background-image: url('/src/view-list.svg');
+    background-image: url('./src/view-list.svg');
 }
 
 header .login{
-    background-image: url('/src/login.svg');
+    background-image: url('./src/login.svg');
 }
 
 header .search{
-    background-image: url('/src/search.svg');
+    background-image: url('./src/search.svg');
 }
 header .login.on, header .search.on{
 background-color: rgba(255,255,255,.2);
